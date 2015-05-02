@@ -62,7 +62,7 @@ public class Tile
     }
 }
 
-class Game
+class Board
 {
     //-------------------------------------------------------------------------
     // Initialize internal data
@@ -72,7 +72,7 @@ class Game
     private int[][] mBoardLayout;
     private Dictionary<string, List<Tile>> mContiguousChunks;
 
-    public Game(int[][] layout, TileInfo[] pieces)
+    public Board(int[][] layout, TileInfo[] pieces)
     {
         mBoardLayout = layout;
         mPieces = pieces;
